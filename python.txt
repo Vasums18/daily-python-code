@@ -1,0 +1,71 @@
+1. Even or Odd
+num = int(input("Enter a number: "))
+if num % 2 == 0:
+    print("Even")
+else:
+    print("Odd")
+
+🔢 2. Find Largest of Three Numbers
+a, b, c = map(int, input("Enter three numbers: ").split())
+if a >= b and a >= c:
+    print("Largest:", a)
+elif b >= a and b >= c:
+    print("Largest:", b)
+else:
+    print("Largest:", c)
+
+🔁 3. Sum of N Natural Numbers
+n = int(input("Enter a number: "))
+sum_n = n * (n + 1) // 2
+print("Sum =", sum_n)
+
+🔄 4. Factorial of a Number
+n = int(input("Enter a number: "))
+fact = 1
+for i in range(1, n + 1):
+    fact *= i
+print("Factorial =", fact)
+
+🔢 5. Fibonacci Series
+n = int(input("Enter terms: "))
+a, b = 0, 1
+for i in range(n):
+    print(a, end=" ")
+    a, b = b, a + b
+
+🧮 6. Check Prime Number
+n = int(input("Enter a number: "))
+if n > 1:
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            print("Not Prime")
+            break
+    else:
+        print("Prime")
+else:
+    print("Not Prime")
+
+🔡 7. Reverse a String
+s = input("Enter a string: ")
+print("Reversed:", s[::-1])
+
+💬 8. Palindrome Check
+s = input("Enter a string: ")
+if s == s[::-1]:
+    print("Palindrome")
+else:
+    print("Not Palindrome")
+
+🧮 9. Count Vowels in a String
+s = input("Enter a string: ").lower()
+vowels = 'aeiou'
+count = sum(1 for i in s if i in vowels)
+print("Vowel count:", count)
+
+🧠 10. Sum of Digits
+n = int(input("Enter a number: "))
+sum_digits = 0
+while n > 0:
+    sum_digits += n % 10
+    n //= 10
+print("Sum of digits:", sum_digits)
