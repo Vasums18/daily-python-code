@@ -69,4 +69,4 @@ while n > 0:
     sum_digits += n % 10
     n //= 10
 print("Sum of digits:", sum_digits)
-these are interview question
+these are interview questions
